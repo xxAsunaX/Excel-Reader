@@ -9,11 +9,11 @@
 <body style="text-align: center;">
     <h2>CSV Import to MySQL</h2>
 
-    <form method="post" enctype="multipart/form-data">
-        Select CSV file to upload:
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload CSV" name="submit">
-    </form>
-    
+<form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="file" id="fileInput">
+    <button type="button" onclick="uploadFile()">Upload</button>
+</form>
+<script src="script.js"></script>
+
 </body>
 </html>
